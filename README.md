@@ -4,5 +4,14 @@ Completed by Jay Gardos & Kristin Kirouac
 
 # Instructions:
 1) Navigate into the folder that interests you (Cryptocurrency/ or Journalists/)
-
-2) Once in the folder, run the command $ ruby run.rb
+   ```
+   cd log/Cryptorrency/
+   ```
+   OR
+   ```
+   cd log/Journalists/
+   ```
+3) Once in the folder, run the command
+   ```
+   ruby run.rb
+   ```
