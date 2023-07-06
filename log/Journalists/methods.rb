@@ -48,6 +48,7 @@ end
 def sort_by_length(array_of_handles)
   puts array_of_handles.sort_by(&:length)
 end
+#sort_by_length(JOURNALISTS)
 
 def find_position_of_handle(array_of_handles, user_handle = '@epenser')
   puts array_of_handles.find_index(user_handle)
@@ -67,7 +68,23 @@ def distribution_handles_by_size(array_of_handles)
     end
   end
 
-  puts distribution_hash
+  return distribution_hash
 end
 
-distribution_handles_by_size(JOURNALISTS)
+# distribution_handles_by_size(JOURNALISTS)
+
+def visual_representation(hash)
+  puts "length -- number of instances"
+  puts "------------------------------ "
+
+  hash.each do |key, value|
+    if key < 10
+      print " #{key}     |" 
+    else
+      print " #{key}    |" 
+    end
+
+    value.times { print "*" }
+    print "\n"
+  end
+end
